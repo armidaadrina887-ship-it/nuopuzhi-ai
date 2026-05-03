@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 50% 8%;
+    --foreground: 0 0% 100%;
+    --card: 220 45% 12%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 45% 12%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 200 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 40% 16%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 220 30% 18%;
+    --muted-foreground: 220 15% 50%;
+    --accent: 43 90% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 340 100% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 80% 50% / 0.2;
+    --input: 220 30% 18%;
+    --ring: 200 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    background: linear-gradient(180deg, #0a1628 0%, #0d1f38 50%, #0a1628 100%);
+    color: #ffffff;
+    font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@layer components {
+  .font-mono-display {
+    font-family: ui-monospace, "JetBrains Mono", "OCRAEXT", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .glass-panel {
+    background: rgba(13, 33, 55, 0.85);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    border: 1px solid rgba(0, 168, 255, 0.2);
+  }
+
+  .neon-border {
+    border: 1px solid rgba(0, 168, 255, 0.35);
+    box-shadow: 0 0 12px rgba(0, 168, 255, 0.1), inset 0 0 8px rgba(0, 168, 255, 0.05);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 15px rgba(0, 168, 255, 0.5), 0 0 30px rgba(0, 168, 255, 0.3);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #00a8ff 0%, #00d4ff 50%, #00a8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gold {
+    color: #f5a623;
+  }
+
+  .bg-gold {
+    background: #f5a623;
+  }
+
+  .border-blue-glow {
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.15);
+  }
+}
